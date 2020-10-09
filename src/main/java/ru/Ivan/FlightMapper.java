@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Mapper;
 
 import java.io.IOException;
 
-public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableComparable, FlightWritable> {
+public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableComparable, Text> {
 
     private static final String DELIMITER = ",";
     private static final int DESTAEROPORTID = 14;
