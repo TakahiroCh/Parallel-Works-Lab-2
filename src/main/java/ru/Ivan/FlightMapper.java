@@ -11,8 +11,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
     private static final String DELIMITER = ",";
     private static final int DESTAEROPORTID = 14;
     private static final int ARRDELAY = 17;
-    private static final int CANCELLED = 19;
-    private static final int AIRTIME = 20;
+    //private static final int CANCELLED = 19;
+    //private static final int AIRTIME = 20;
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException {
