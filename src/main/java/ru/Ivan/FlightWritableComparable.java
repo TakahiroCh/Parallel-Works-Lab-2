@@ -25,8 +25,11 @@ public class FlightWritableComparable implements WritableComparable {
             return 1;
         } else if (this.aeroportID < second.aeroportID) {
             return -1;
-        } else if (this.indenity > )
-        return 0;
+        } else if (this.indenity > second.indenity) {
+            return 1;
+        } else {
+            return -1;
+        }
     }
 
     @Override
