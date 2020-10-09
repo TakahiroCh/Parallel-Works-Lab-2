@@ -1,2 +1,4 @@
-package ru.Ivan;public class FlightMapper {
+package ru.Ivan;
+
+public class FlightMapper {
 }
