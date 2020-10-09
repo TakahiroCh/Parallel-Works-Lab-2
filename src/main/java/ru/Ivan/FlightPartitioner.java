@@ -1,4 +1,6 @@
 package ru.Ivan;
 
-public class FlightPartitioner {
+import org.apache.hadoop.mapreduce.Partitioner;
+
+public class FlightPartitioner extends Partitioner {
 }
