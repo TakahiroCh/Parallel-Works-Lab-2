@@ -10,7 +10,7 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
     @Override
     protected void reduce(FlightWritableComparable key, Iterable<Text> values, Context context)
             throws IOException, InterruptedException {
-        
+
 
     }
 
