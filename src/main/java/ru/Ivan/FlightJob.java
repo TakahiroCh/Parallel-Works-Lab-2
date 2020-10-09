@@ -21,6 +21,15 @@ public class FlightJob {
         MultipleInputs.addInputPath(job, new Path(args[1]), TextInputFormat.class, FlightNameMapper.class);
 
         FileOutputFormat.setOutputPath(job, new Path(args[2]));
+        job.setPartitionerClass(FlightPartitioner.class);
+        job.setGroupingComparatorClass(FlightGroupingComparatorClass.class);
+        job.setReducerClass(FlightReduce.class);
+        job.setMapOutputKeyClass(FlightWritableComparable.class);
+
+        job.setOutputKeyClass(Text.class);
+
+
+
 
         job.setMapperClass(WordMapper.class);
 
