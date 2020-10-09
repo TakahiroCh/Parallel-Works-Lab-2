@@ -24,13 +24,7 @@ public class FlightWritableComparable implements WritableComparable {
 
     public int compareID(Object o) {
         FlightWritableComparable second = (FlightWritableComparable) o;
-        if (this.aeroportID > second.aeroportID) {
-            return 1;
-        } else if (this.aeroportID < second.aeroportID) {
-            return -1;
-        } else {
-            return 0;
-        }
+        return Integer.compare(this.aeroportID, second.aeroportID);
     }
 
     @Override
