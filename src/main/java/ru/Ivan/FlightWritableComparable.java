@@ -10,7 +10,7 @@ public class FlightWritableComparable implements WritableComparable {
 
     private int destAirportID;
     private float arrDelay;
-    private float 
+    private float can
 
     @Override
     public int compareTo(Object o) {
