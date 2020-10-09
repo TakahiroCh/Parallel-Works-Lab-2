@@ -1,4 +1,4 @@
 package ru.Ivan;
 
-public class FlightMapper {
+public class FlightMapper extends Mapper<{
 }
