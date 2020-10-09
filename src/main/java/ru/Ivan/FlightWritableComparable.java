@@ -8,7 +8,8 @@ import java.io.IOException;
 
 public class FlightWritableComparable implements WritableComparable {
 
-    private int destAirportID
+    private int destAirportID;
+    
     @Override
     public int compareTo(Object o) {
         return 0;
