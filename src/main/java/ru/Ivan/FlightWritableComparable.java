@@ -1,2 +1,4 @@
-package ru.Ivan;public class FlightWritableComparable {
+package ru.Ivan;
+
+public class FlightWritableComparable {
 }
