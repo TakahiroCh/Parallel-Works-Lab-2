@@ -15,7 +15,8 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
         String[] table = value.toString().split(DELIMITER);
         int destAeroportID = Integer.parseInt(table[14]);
         float arrDelay = Float.parseFloat(table[17]);
-        float cancelled = Float.parseFloat(table[])
+        float cancelled = Float.parseFloat(table[19]);
+        float 
 
     }
 }
