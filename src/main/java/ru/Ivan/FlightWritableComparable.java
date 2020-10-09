@@ -20,16 +20,24 @@ public class FlightWritableComparable implements WritableComparable {
 
     @Override
     public int compareTo(Object o) {
+        FlightWritableComparable second = (FlightWritableComparable) o;
+        if (this.aeroportID > second.aeroportID) {
+            return 1;
+        } else if (this.aeroportID < second.aeroportID) {
+            return -1;
+        } else if (this.indenity > )
         return 0;
     }
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
-
+        dataOutput.writeInt(aeroportID);
+        dataOutput.writeInt(indenity);
     }
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-
+        this.aeroportID = dataInput.readInt();
+        this.indenity = dataInput.readInt();
     }
 }
