@@ -18,6 +18,10 @@ public class FlightWritableComparable implements WritableComparable {
         this.indenity = indenity;
     }
 
+    public int getID() {
+        return this.aeroportID;
+    }
+
     @Override
     public int compareTo(Object o) {
         FlightWritableComparable second = (FlightWritableComparable) o;
