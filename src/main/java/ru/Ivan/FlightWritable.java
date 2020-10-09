@@ -6,7 +6,7 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class FlightWritableComparable implements Writable {
+public class FlightWritable implements Writable {
 
     private int destAirportID;
     private float arrDelay;
@@ -20,11 +20,6 @@ public class FlightWritableComparable implements Writable {
         this.arrDelay = arrDelay;
         this.cancelled = cancelled;
         this.airTime = airTime;
-    }
-
-    @Override
-    public int compareTo(Object o) {
-        return 0;
     }
 
     @Override
