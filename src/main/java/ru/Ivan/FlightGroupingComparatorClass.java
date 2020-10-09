@@ -1,2 +1,4 @@
-package ru.Ivan;public class FlightGroupingComparatorClass {
+package ru.Ivan;
+
+public class FlightGroupingComparatorClass {
 }
