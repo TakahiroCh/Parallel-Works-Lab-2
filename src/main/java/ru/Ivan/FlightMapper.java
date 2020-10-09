@@ -18,6 +18,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
 
     @Override
     public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
+        System.out.println(key.get());
         String[] table = value.toString().split(DELIMITER);
         int destAeroportID = Integer.parseInt(table[DESTAEROPORTID]);
         float arrDelay = Float.parseFloat(table[ARRDELAY]);
