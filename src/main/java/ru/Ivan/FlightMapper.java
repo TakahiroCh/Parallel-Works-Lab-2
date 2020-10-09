@@ -17,7 +17,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
     //private static final int AIRTIME = 20;
 
     @Override
-    public void map(LongWritable key, Text value, Context context) throws IOException {
+    public void map(LongWritable key, Text value, Context context) throws IOException, InterruptedException {
         String[] table = value.toString().split(DELIMITER);
         int destAeroportID = Integer.parseInt(table[DESTAEROPORTID]);
         float arrDelay = Float.parseFloat(table[ARRDELAY]);
@@ -27,8 +27,5 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
             FlightWritableComparable currentKey = new FlightWritableComparable(destAeroportID, FORDELAY);
             context.write(currentKey, new Text(table[ARRDELAY]));
         }
-
-
-
     }
 }
