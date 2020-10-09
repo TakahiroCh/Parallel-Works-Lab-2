@@ -9,6 +9,8 @@ import java.io.IOException;
 public class FlightWritableComparable implements WritableComparable {
 
     private int destAirportID;
+    private float arrDelay;
+    private float 
 
     @Override
     public int compareTo(Object o) {
