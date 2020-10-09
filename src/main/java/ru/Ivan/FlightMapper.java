@@ -22,7 +22,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
         float cancelled = Float.parseFloat(table[CANCELLED]);
         float airTime = Float.parseFloat(table[AIRTIME]);
 
-        
+
 
     }
 }
