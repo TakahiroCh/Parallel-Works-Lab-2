@@ -34,7 +34,7 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
             count++;
         }
         average /= count;
-        
+        context.write();
 
     }
 
