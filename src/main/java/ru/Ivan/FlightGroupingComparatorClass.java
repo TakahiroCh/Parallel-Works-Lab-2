@@ -1,4 +1,6 @@
 package ru.Ivan;
 
-public class FlightGroupingComparatorClass implements Comparable{
+import org.apache.hadoop.io.WritableComparable;
+
+public class FlightGroupingComparatorClass implements WritableComparable{
 }
