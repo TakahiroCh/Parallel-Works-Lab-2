@@ -7,5 +7,5 @@ import org.apache.hadoop.mapreduce.Mapper;
 public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableComparable, FlightWritable> {
 
     @Override
-    public 
+    public void main
 }
