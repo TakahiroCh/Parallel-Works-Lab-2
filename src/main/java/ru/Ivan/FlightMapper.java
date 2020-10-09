@@ -13,7 +13,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
     @Override
     public void main(LongWritable key, Text value, Context context) throws IOException {
         String[] table = value.toString().split(DELIMITER);
-        int aeroportID = table[]
+        int aeroportID = table[14];
 
     }
 }
