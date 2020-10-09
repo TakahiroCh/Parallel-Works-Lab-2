@@ -19,12 +19,22 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
         int count = TOCOUNT;
         float min = ZERO;
         float max = ZERO;
-        float min = ZERO;
-
-
+        float average = ZERO;
         while(iter.hasNext()) {
-
+            float currentValue = Float.parseFloat(iter.next().toString());
+            if (count == TOCOUNT) {
+                min = currentValue;
+            }
+            if (currentValue < min) {
+                min = currentValue;
+            } else if (currentValue > max) {
+                max = currentValue;
+            }
+            average += currentValue;
+            count++;
         }
+        average /= count;
+        
 
     }
 
