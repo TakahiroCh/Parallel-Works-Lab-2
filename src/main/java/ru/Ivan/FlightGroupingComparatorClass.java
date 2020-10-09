@@ -9,6 +9,6 @@ public class FlightGroupingComparatorClass extends WritableComparator {
     public int compare(WritableComparable a,WritableComparable b) {
         FlightWritableComparable firstFlight = (FlightWritableComparable) a;
         FlightWritableComparable secondFlight = (FlightWritableComparable) b;
-        return firstFlight.compareID(b);
+        return firstFlight.compareID(secondFlight);
     }
 }

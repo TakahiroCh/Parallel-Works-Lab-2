@@ -33,7 +33,9 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
             average += currentValue;
             count++;
         }
-        average /= count;
-        context.write(nameInfo, new Text("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + average + ";"));
+        if (count != TOCOUNT) {
+            average /= count;
+            context.write(nameInfo, new Text("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + average + ";"));
+        }
     }
 }
