@@ -9,8 +9,7 @@ import java.io.IOException;
 public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableComparable, Text> {
 
     private static final String DELIMITER = ",";
-    private static final int FORDELAY = 1;
-    private static final float ZERO = 0.0F;
+    private static final int FORNAME = 0;
     private static final int DESTAEROPORTID = 14;
     private static final int ARRDELAY = 17;
     //private static final int CANCELLED = 19;
