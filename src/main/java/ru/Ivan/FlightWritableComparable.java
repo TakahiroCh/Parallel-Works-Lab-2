@@ -29,11 +29,17 @@ public class FlightWritableComparable implements WritableComparable {
 
     @Override
     public void write(DataOutput dataOutput) throws IOException {
-
+        dataOutput.writeInt(this.destAirportID);
+        dataOutput.writeFloat(this.arrDelay);
+        dataOutput.writeFloat(this.cancelled);
+        dataOutput.writeFloat(this.airTime);
     }
 
     @Override
     public void readFields(DataInput dataInput) throws IOException {
-
+        this.destAirportID = dataInput.readInt();
+        this.arrDelay = dataInput.readFloat();
+        this.cancelled = dataInput.readFloat();
+        this.airTime = dataInput.readFloat();
     }
 }
