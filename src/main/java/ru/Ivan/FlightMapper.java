@@ -14,6 +14,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
     public void main(LongWritable key, Text value, Context context) throws IOException {
         String[] table = value.toString().split(DELIMITER);
         int aeroportID = Integer.parseInt(table[14]);
+        int 
 
     }
 }
