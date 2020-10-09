@@ -21,7 +21,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
         float arrDelay = Float.parseFloat(table[ARRDELAY]);
         float cancelled = Float.parseFloat(table[CANCELLED]);
         float airTime = Float.parseFloat(table[AIRTIME]);
-        
+
 
     }
 }
