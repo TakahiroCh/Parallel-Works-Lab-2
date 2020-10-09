@@ -1,4 +1,4 @@
 package ru.Ivan;
 
-public class WriteComparable {
+public class WriteComparable implements  {
 }
