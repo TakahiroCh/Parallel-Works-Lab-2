@@ -1,0 +1,8 @@
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightNameMapper.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightMapper.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightPartitioner.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightJob.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightWritable.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightReduce.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightWritableComparable.java
+/home/takahiro/IdeaProjects/Parallel-Works-Lab-2/src/main/java/ru/Ivan/FlightGroupingComparatorClass.java

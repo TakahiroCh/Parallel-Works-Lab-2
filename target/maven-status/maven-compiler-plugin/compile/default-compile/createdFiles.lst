@@ -1,0 +1,8 @@
+ru/Ivan/FlightWritable.class
+ru/Ivan/FlightPartitioner.class
+ru/Ivan/FlightJob.class
+ru/Ivan/FlightWritableComparable.class
+ru/Ivan/FlightReduce.class
+ru/Ivan/FlightGroupingComparatorClass.class
+ru/Ivan/FlightNameMapper.class
+ru/Ivan/FlightMapper.class
