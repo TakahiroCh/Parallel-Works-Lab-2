@@ -7,6 +7,8 @@ import java.io.DataOutput;
 import java.io.IOException;
 
 public class FlightWritableComparable implements WritableComparable {
+
+    private 
     @Override
     public int compareTo(Object o) {
         return 0;
