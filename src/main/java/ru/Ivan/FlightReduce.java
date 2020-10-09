@@ -1,4 +1,7 @@
 package ru.Ivan;
 
-public class FlightReduce {
+import org.apache.hadoop.io.Text;
+import org.apache.hadoop.mapreduce.Reducer;
+
+public class FlightReduce extends Reducer<FlightWritableComparable, Text, > {
 }
