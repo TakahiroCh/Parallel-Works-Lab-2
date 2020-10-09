@@ -1,4 +1,4 @@
 package ru.Ivan;
 
-public class FlightGroupingComparatorClass {
+public class FlightGroupingComparatorClass implements Comparable{
 }
