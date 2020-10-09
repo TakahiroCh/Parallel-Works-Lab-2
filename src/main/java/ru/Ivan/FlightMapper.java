@@ -15,13 +15,14 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
     private static final int AIRTIME = 20;
 
     @Override
-    public void main(LongWritable key, Text value, Context context) throws IOException {
+    public void map(LongWritable key, Text value, Context context) throws IOException {
         String[] table = value.toString().split(DELIMITER);
         int destAeroportID = Integer.parseInt(table[DESTAEROPORTID]);
         float arrDelay = Float.parseFloat(table[ARRDELAY]);
         float cancelled = Float.parseFloat(table[CANCELLED]);
         float airTime = Float.parseFloat(table[AIRTIME]);
 
+        
 
     }
 }
