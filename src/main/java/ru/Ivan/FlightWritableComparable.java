@@ -15,7 +15,12 @@ public class FlightWritableComparable implements WritableComparable {
 
     public FlightWritableComparable() {}
 
-    
+    public FlightWritableComparable(int destAirportID, float arrDelay, float cancelled, float airTime) {
+        this.destAirportID = destAirportID;
+        this.arrDelay = arrDelay;
+        this.cancelled = cancelled;
+        this.airTime = airTime;
+    }
 
     @Override
     public int compareTo(Object o) {
