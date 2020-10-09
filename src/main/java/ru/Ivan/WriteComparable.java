@@ -1,2 +1,4 @@
-package ru.Ivan;public class WriteComparable {
+package ru.Ivan;
+
+public class WriteComparable {
 }

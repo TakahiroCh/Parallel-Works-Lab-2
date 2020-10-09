@@ -4,5 +4,5 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class FlightMapper extends Mapper<LongWritable, Text, Text, Text> {
+public class FlightMapper extends Mapper<LongWritable, Text, WriteComparable, Text> {
 }
