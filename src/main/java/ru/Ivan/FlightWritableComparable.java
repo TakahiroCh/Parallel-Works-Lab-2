@@ -1,12 +1,12 @@
 package ru.Ivan;
 
-import org.apache.hadoop.io.WritableComparable;
+import org.apache.hadoop.io.Writable;
 
 import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class FlightWritableComparable implements WritableComparable {
+public class FlightWritableComparable implements Writable {
 
     private int destAirportID;
     private float arrDelay;
