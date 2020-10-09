@@ -13,9 +13,9 @@ public class FlightWritable implements Writable {
     private float cancelled;
     private float airTime;
 
-    public FlightWritableComparable() {}
+    public FlightWritable() {}
 
-    public FlightWritableComparable(int destAirportID, float arrDelay, float cancelled, float airTime) {
+    public FlightWritable(int destAirportID, float arrDelay, float cancelled, float airTime) {
         this.destAirportID = destAirportID;
         this.arrDelay = arrDelay;
         this.cancelled = cancelled;
