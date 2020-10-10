@@ -33,7 +33,7 @@ public class FlightMapper extends Mapper<LongWritable, Text, FlightWritableCompa
             float arrDelay = checkNull(table[ARRDELAY]);
             //float cancelled = Float.parseFloat(table[CANCELLED]);
             //float airTime = Float.parseFloat(table[AIRTIME]);
-            if (arrDelay >= ZERO) {
+            if (arrDelay > ZERO) {
                 FlightWritableComparable currentKey = new FlightWritableComparable(destAeroportID, FORDELAY);
                 context.write(currentKey, new Text(table[ARRDELAY]));
             }
