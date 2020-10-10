@@ -16,6 +16,7 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
             throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text nameInfo = new Text(iter.next());
+        if ()
         int count = TOCOUNT;
         float min = ZERO;
         float max = ZERO;
