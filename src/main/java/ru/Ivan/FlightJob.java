@@ -25,6 +25,7 @@ public class FlightJob {
         job.setGroupingComparatorClass(FlightGroupingComparatorClass.class);
         job.setReducerClass(FlightReduce.class);
         job.setMapOutputKeyClass(FlightWritableComparable.class);
+        job.setMapOutputValueClass(Text.class);
 
         job.setOutputKeyClass(Text.class);
         job.setOutputValueClass(Text.class);

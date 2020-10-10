@@ -16,28 +16,26 @@ public class FlightReduce extends Reducer<FlightWritableComparable, Text, Text, 
             throws IOException, InterruptedException {
         Iterator<Text> iter = values.iterator();
         Text nameInfo = new Text(iter.next());
-        if (iter.hasNext()) {
-            int count = TOCOUNT;
-            float min = ZERO;
-            float max = ZERO;
-            float average = ZERO;
-            while (iter.hasNext()) {
-                float currentValue = Float.parseFloat(iter.next().toString());
-                if (count == TOCOUNT) {
-                    min = currentValue;
-                }
-                if (currentValue < min) {
-                    min = currentValue;
-                } else if (currentValue > max) {
-                    max = currentValue;
-                }
-                average += currentValue;
-                count++;
+        int count = TOCOUNT;
+        float min = ZERO;
+        float max = ZERO;
+        float average = ZERO;
+        while(iter.hasNext()) {
+            float currentValue = Float.parseFloat(iter.next().toString());
+            if (count == TOCOUNT) {
+                min = currentValue;
             }
-            if (count != TOCOUNT) {
-                average /= count;
-                context.write(nameInfo, new Text("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + average + ";"));
+            if (currentValue < min) {
+                min = currentValue;
+            } else if (currentValue > max) {
+                max = currentValue;
             }
+            average += currentValue;
+            count++;
+        }
+        if (count != TOCOUNT) {
+            average /= count;
+            context.write(nameInfo, new Text("MINDELAY: " + min + "; MAXDELAY: " + max + "; AVERAGE: " + average + ";"));
         }
     }
 }
